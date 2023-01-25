@@ -15,7 +15,12 @@ export default function Home() {
     const response = await fetch(`http://localhost:3333/products?q=${search}`)
     const data = await response.json()
     setResults(data)
-  } 
+  }
+
+  const addToWishList = (id: number) => {
+    console.log(id)
+  }
+
   return (
     <div>
       <h1>Search</h1>
@@ -24,7 +29,7 @@ export default function Home() {
         <button type="submit">Buscar</button>
       </form>
 
-      <SearchResults results={results}/>
+      <SearchResults onAddToWishList={addToWishList} results={results} />
     </div>
   )
 }
