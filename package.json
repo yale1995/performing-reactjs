@@ -10,11 +10,14 @@
     "server": "json-server -d 750 -w -p 3333 ./server.js"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^13.1.5",
     "@next/font": "13.1.5",
+    "@types/lodash": "^4.14.191",
     "@types/node": "18.11.18",
     "@types/react-dom": "18.0.10",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.5",
+    "lodash": "^4.17.21",
     "next": "13.1.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
